@@ -29,6 +29,23 @@ public class Bicyle extends Vehicle{
         System.out.println("myGearCount:" + myGearCount + "myBrand:" + myBrand + "myModel:" + myModel);
     }
     /**
+    * Metodo imprimir especializado de la interfaz
+    */
+    @Override
+    public void apagar()
+    {
+        System.out.println("\nLa bici esta apagada..\n");
+    }
+    /**
+    * Metodo imprimir especializado de la interfaz
+    */
+    @Override
+    public void encender()
+    {
+        System.out.println("\nLa bici esta encendida..\n");
+    }
+
+    /**
      * @return the myGearCount
      */
     public String getMyGearCount() {

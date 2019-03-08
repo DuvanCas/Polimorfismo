@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package polimorfismo;
+
+import InterfazVehiculos.Interfaz;
+
 /**
  *
  * @author Duvan
@@ -12,7 +15,7 @@ package polimorfismo;
  * 
  * @description Clase padre, sera aquella que contendra atributos para las clases hijas
  */
-public abstract class Vehicle {
+public abstract class Vehicle implements Interfaz{
     protected String myBrand;
     protected String myModel;
     /**
@@ -54,5 +57,15 @@ public abstract class Vehicle {
      */
     public void setMyModel(String myModel) {
         this.myModel = myModel;
-    }    
+    }
+    @Override
+    public void apagar()
+    {
+        System.out.println("\nEl vehiculo esta apagado\n");
+    }
+    @Override
+    public void encender()
+    {
+        System.out.println("\nEl vehiculo esta encendido\n");
+    }
 }

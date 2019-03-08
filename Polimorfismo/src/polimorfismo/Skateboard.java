@@ -29,6 +29,22 @@ public class Skateboard extends Vehicle{
         System.out.println("myBoardLength:" + myBoardLength + "myBrand:" + myBrand + "myModel:" + myModel);  
     }
     /**
+     * Metodo imprimir especializado de la interfaz
+     */
+    @Override
+    public void apagar()
+    {
+        System.out.println("\nLa patineta esta apagada..\n");
+    }
+    /**
+    * Metodo imprimir especializado de la interfaz
+    */
+    @Override
+    public void encender()
+    {
+        System.out.println("\nLa patineta esta encendida..\n");
+    }
+    /**
      * @return the myBoardLength
      */
     public String getMyBoardLength() {

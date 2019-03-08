@@ -63,12 +63,16 @@ public class Logica {
                 Bicyle cicla = (Bicyle)vehiculo1;
                 cicla.imprimir();
                 cicla.imprimirBicicleta();
+                cicla.apagar();
+                cicla.encender();
             }
             else if(vehiculo1 instanceof Skateboard)
                     {
                         Skateboard tabla = (Skateboard)vehiculo1;
                         tabla.imprimir();
                         tabla.imprimirSkate();
+                        tabla.apagar();
+                        tabla.encender();
                     }
             else if(vehiculo1 instanceof Car)
             {
@@ -76,6 +80,8 @@ public class Logica {
                 carro.imprimir();
                 carro.imprimirVehiculos();
                 carro.imprimirCar();
+                carro.apagar();
+                carro.encender();
             }
             else if(vehiculo1 instanceof Jet)
             {
@@ -83,6 +89,8 @@ public class Logica {
                 avion.imprimir();
                 avion.imprimirVehiculos();
                 avion.imprimirJet();
+                avion.apagar();
+                avion.encender();
             }
         }
     }

@@ -23,8 +23,16 @@ public class Car extends PoweredVehicle{
         this.myEngineSize = myEngineSize;
     }
     /**
-     * metodo que imprime los atributos solicitados por la clase padre y su propio atributo
+     * metodo imprimir especializado de la clase padre
      */
+    @Override
+    public void imprimir()
+    {
+        System.out.println("\nAcá imprimí la especializacion para la clase Car\n");
+    }
+    /**
+    * metodo que imprime los atributos solicitados por la clase padre y su propio atributo
+    */
     public void imprimirCar(){
         System.out.println("\nClase Car\n");
         System.out.println("myEngineSize:" + myEngineSize + "myFuelType:" + myFuelType + "myBrand:" + myBrand + "myModel:" + myModel);
